@@ -1,0 +1,210 @@
+.about-header {
+    height: 100vh;
+    color: #dadada;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    height: 75%;
+    flex-direction: column;
+}
+
+.btn-cv {
+    text-transform: uppercase;
+    padding: calc(4px + 1vw);
+    background: none;
+    border: none;
+    position: relative;
+    padding: 1%;
+    transition: 0.5s all ease-in;
+}
+
+.btn-cv {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.btn-cv:hover {
+    color: #ffbb00;
+    transition: 0.5s all ease-out;
+}
+
+.btn-cv:hover::after, .btn-cv:hover::before {
+    height: 100%;
+    transition: 800ms all ease;
+}
+
+.btn-cv::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #dadada;
+    border-bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 25%;
+    transition: 300ms all ease;
+}
+
+.btn-cv::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #dadada;
+    border-top: 0;
+    content: " ";
+    width: 100%;
+    height: 25%;
+    transition: 300ms all ease;
+}
+
+/* header end */
+
+/* my info start */
+
+.my-info {
+    background-color: #161616;
+    color: #f9f9f9;
+    text-transform: capitalize;
+}
+
+.my-info img {
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    object-fit: cover;
+}
+
+.info-bold {
+    font-weight: 500;
+}
+
+.skill-info {
+    width: 100%;
+}
+
+.languese-skill {
+    padding-block: calc(5px + 1vw);
+}
+
+.skills,
+.item-line-1,
+.item-line-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillbar {
+    background-color: #dadada;
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.skill-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #c69c6d;
+}
+
+.mysql-number {
+    width: 85%;
+}
+
+.jquery-number {
+    width: 70%;
+}
+
+.php-number {
+    width: 50%;
+}
+
+.js-number {
+    width: 80%;
+}
+
+.css-number {
+    width: 90%;
+}
+
+.html-number {
+    width: 95%;
+}
+
+.react-number {
+    width: 25%;
+}
+
+.laravel-number {
+    width: 45%;
+}
+
+/* my info end */
+
+/* drop cv start */
+
+.drop-cv {
+    padding: 20vh 0;
+    color: #dadada;
+    background-image: linear-gradient(to bottom, #1d1d1d, #1d1d1d, #363636);
+    text-align: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-hover:hover {
+    background-color: #ff9900;
+    color: #f9f9f9;
+    transition: 800ms all ease;
+    font-weight: 700;
+}
+
+/* drop cv end */
+
+/* contact css start */
+
+.about-color {
+    color: #ffbb00;
+}
+
+.contact-us {
+    background-color: #1d1d1d;
+    color: #dadada;
+    font-family: 'poppins', sans-serif;
+}
+
+.short-contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    font-family: 'poppins', sans-serif;
+}
+
+form input,
+form textarea {
+    padding: 5px;
+    font-weight: 500;
+}
+
+.comment-source-info {
+    text-align: center;
+    width: 100%;
+}
+
+.comment-source-info input {
+    width: 49.7%;
+}
+
+/* contact css end */

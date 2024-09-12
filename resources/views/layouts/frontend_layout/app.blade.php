@@ -14,7 +14,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="{{ asset('asset/css/responsive.css')  }}">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="{{ asset('asset/images/logo.png') }}" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="{{ asset('asset/css/jquery.mCustomScrollbar.min.css')  }}">
     <!-- Tweaks for older IEs-->
@@ -79,7 +79,7 @@
 
         <div class="container">
 
-            <p class="copyright_text">&copy;<?php $currentYear = date('Y'); echo $currentYear; ?> All Rights Reserved. Design by <a href="https://www.linkedin.com/in/hridoy-sheikh-12ab79269/">Hridoy Sheikh</a></p>
+            <p class="copyright_text">&copy;<?php $currentYear = date('Y'); echo $currentYear; ?> All Rights Reserved. Made with a cup of &#9749; and &#128150; By <a href="https://www.linkedin.com/in/hridoy-sheikh-12ab79269/">Hridoy Sheikh</a></p>
 
         </div>
 
@@ -150,7 +150,7 @@
 
         window.addEventListener('focus', () => {
 
-            document.title = "@yield('title', 'Portfolio || Hridoy Sheikh')";
+            document.title = `@yield("title", "Portfolio || Hridoy Sheikh")`;
 
         });
 

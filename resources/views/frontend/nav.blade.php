@@ -11,7 +11,7 @@
                     <a class="nav-link {{ Request::is('quick-info') ? 'active' : '' }}" href="{{ route('quick.info') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('about-me') ? 'active' : '' }}" href="{{ route('quick.info') }}">About</a>
+                    <a class="nav-link {{ Request::is('about-me') ? 'active' : '' }}" href="{{ route('about.me') }}">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('my-works') ? 'active' : '' }}" href="{{ route('my.work') }}">Portfolio</a>
@@ -20,10 +20,13 @@
                     <a class="nav-link {{ Request::is('what-am-i-do') ? 'active' : '' }}" href="{{ route('service') }}">Service</a>
                 </li>
                 <li class="nav-item">
-                    {{-- <a class="nav-link {{ Request::is('explore-with-me') ? 'active' : '' }}" href="{{ route('quick.info') }}">Blog</a> --}}
+                    <a class="nav-link {{ Request::is('explore-with-me') ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('make-a-meeting') ? 'active' : '' }}" href="{{ route('contact.me') }}">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">Log In</a>
                 </li>
             </ul>
         </div>

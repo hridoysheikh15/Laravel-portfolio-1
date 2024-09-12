@@ -3,8 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
@@ -13,8 +15,10 @@ Route::get('/', function () {
 
 // frontend route
 Route::get('/quick-info', [HomeController::class, 'index'])->name('quick.info');
+Route::get('/about-me', [AboutController::class, 'index'])->name('about.me');
 Route::get('/my-works', [ProjectsController::class, 'index'])->name('my.work');
 Route::get('/what-am-i-do', [ServiceController::class, 'index'])->name('service');
+Route::get('/explore-with-me', [BlogController::class, 'index'])->name('blog');
 Route::get('/make-a-meeting', [ContactController::class, 'index'])->name('contact.me');
 
 Route::get('/dashboard', function () {
